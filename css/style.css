@@ -41,12 +41,61 @@ body {
 
 /* Header */
 header {
-  border-bottom: 2px solid #7AA9FF;
+  border-bottom: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 60px;
-  background: white;
+  padding: 10px 60px;
+  background: #d9eaff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo-text {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #000;
+}
+nav {
+  display: flex;
+  gap: 10px;
+}
+.menuCima {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  background: #b2f0e1;
+}
+.opcaoCima {
+  padding: 8px 16px;
+  background: #b2f0e1;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #7aa9ff;
+}
+.opcaoCima:hover {
+  background: #7aa9ff;
+  color: white;
+}
+.opcaoCima.selecionado {
+  background: #7aa9ff !important;
+  color: white !important;
+}
+.user-icon {
+  width: 40px;
+  height: 40px;
+  background: #a6f0d1;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .logo {

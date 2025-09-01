@@ -3,7 +3,7 @@ body {
         font-family: "Arial", sans-serif;
         background-color: #7da2ff;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
         height: 100vh;
     }
@@ -12,7 +12,7 @@ body {
         width: 95vw;   /* 95% da largura visível */
         height: 97vh;  /* 95% da altura visível */
         background-color: #fff;
-        border-radius: 20px;
+        border-radius: 0 0 20px 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -23,11 +23,30 @@ body {
 
     /* TOPO */
     .header {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e6f2ff;
+  border-bottom: 2px solid #b0cfff;
+  width: 95vw;
+  box-sizing: border-box;
+  border-radius: 20px 20px 0 0;
+  margin-top: 30px;
+  padding: 0 40px;
+
+    
+}
+
+.footer-blue {
+    width: 95vw;
+    height: 50px;
+    background-color: #7da2ff;
+    border-radius: 0 0 20px 20px;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+    
 
     .logo {
         display: flex;
@@ -50,6 +69,12 @@ body {
         font-weight: bold;
         color: #7da2ff;
         cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .menu button:hover {
+        background-color: #4a7bd1;
+        color: white;
     }
 
     .menu .icon {
@@ -105,15 +130,22 @@ body {
         font-size: 16px;
         font-weight: bold;
         margin-bottom: 6px;
-        color: #7da2ff;
+        color: #4a7bd1; /* slightly darker blue for better contrast */
     }
 
     input, textarea {
-        border: 1px solid #b5f0eb;
+        border: 1.5px solid #8ac6ff; /* slightly darker border */
         border-radius: 12px;
-        padding: 8px 10px;
+        padding: 10px 12px; /* slightly more padding */
         font-size: 14px;
-        box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        box-shadow: 2px 2px 6px rgba(0,0,0,0.12);
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+        border-color: #4a7bd1;
+        box-shadow: 0 0 8px rgba(74, 123, 209, 0.6);
+        outline: none;
     }
 
     textarea {
@@ -144,4 +176,11 @@ body {
         cursor: pointer;
         font-size: 14px;
         font-weight: bold;
-        color: #7da2ff;}
+        color: #7da2ff;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .actions button:hover {
+        background-color: #4a7bd1;
+        color: white;
+    }
