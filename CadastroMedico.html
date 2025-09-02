@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Médicos</title>
+  <link rel="stylesheet" href="css/cadastroMedicos.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Lista de médicos -->
+    <div class="left">
+      <h2 class="MédicosCadastros"></h2>
+      <img src="fotos/logo.png" alt="Logo" ;class="logo">
+      <ul id="lista-medicos">
+       
+
+       
+      </ul>
+    </div>
+
+    <!-- Formulário -->
+    <div class="right">
+      <h1>Cadastro de Médico</h1>
+      <form id="form">
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome" required>
+
+        <label for="cpf">CPF</label>
+        <input type="text" id="cpf" required>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" required>
+
+        <label for="senha" >Senha</label>
+        <input type="password" id="senha" required; class="senha">
+
+        <label for="doc">Documento de identidade</label>
+        <div class="file-input">
+          <input type="file" id="doc" accept=".pdf,.jpg,.png">
+          <label for="doc" class="doc">Escolher Arquivo</label>
+          <span id="file-doc-name">Nenhum arquivo</span>
+        </div>
+
+        <label for="certificado">Certificado de graduação</label>
+        <div class="file-input">
+          <input type="file" id="certificado" accept=".pdf,.jpg,.png">
+          <label for="certificado" class="doc">Escolher Arquivo</label>
+          <span id="file-cert-name">Nenhum arquivo</span>
+        </div>
+
+        <button type="submit">Cadastrar Médico</button>
+      </form>
+      <a href="login.html" style="text-decoration: none; color: rgb(255, 255, 255); margin-top: 10px; ">
+      Já possui uma conta? entra aqui
+      </a>
+
+            </div>
+
+  </div>
+    
+  <script src="javascript/cadastro.js"></script>
+</body>
+</html>
+
+

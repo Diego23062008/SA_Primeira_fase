@@ -1,0 +1,122 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+/* Lado esquerdo */
+.login-section {
+  flex: 1;
+  height: 100%;
+  background: #78aaff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-section h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Labels */
+label {
+  display: block;
+  font-size: 0.8rem;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Inputs */
+input {
+  
+  background-color: #78aaff;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  text-align: center;
+  box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  border: 1px solid #6fdcdc;   
+  border-radius: 16px; 
+}
+
+
+/* Botão */
+.btn-login {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background: #a5e6e6;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background: #6fdcdc;
+}
+
+#linkCadastro {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.7;
+}
+
+#linkCadastro:hover {
+  opacity: 1;
+}
+
+/* Lado direito */
+.welcome-section {
+  flex: 1;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+ height: 300px;
+}
+.login-text{
+    height: 100px;
+}
+.descer{
+    margin-top: 100px;
+}

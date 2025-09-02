@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeoFono</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+  <header style="justify-items: center;"> 
+    <div class="logo">
+      <img src="fotos/logo-removebg-preview.png" alt="logo" width="200" height="150">
+    </div>
+  </header>
+
+  <main>
+    <!-- parte que mostra as escolhas -->
+    <section class="cards">
+      <div class="card" onclick="escolherOpcao('paciente')">
+        <img src="fotos/paciente.png" alt="Paciente">
+        <h3>Sou Paciente</h3>
+        <p>Criação de conta caso não tiver uma conta e for paciente.</p>
+      </div>
+
+      <div class="card" onclick="escolherOpcao('medico')">
+        <img src="fotos/madico.png" alt="Médico">
+        <h3>Sou Médico</h3>
+        <p>Criação de conta caso não tiver uma conta e for médico.</p>
+      </div>
+
+      <div class="card" onclick="escolherOpcao('login')">
+        <img src="fotos/0a6f86b2-0e2a-42ca-99fd-cf5bcfcfc667.png" alt="Login">
+        <h3>Já tenho conta</h3>
+        <p>Entrar em uma conta já feita anteriormente.</p>
+      </div>  
+    </section>
+  </main>
+
+  <script src="javascript/script.js"></script>
+  </div>
+</body>
+</html>
+      

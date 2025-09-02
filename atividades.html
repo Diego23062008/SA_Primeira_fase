@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Atividades</title>
+  <link rel="stylesheet" href="css/atividades.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Barra lateral / logo -->
+    <aside class="sidebar">
+
+
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+      <!-- Navegação -->
+      <header class="top-nav">
+         <img src="fotos/logo-removebg-preview.png" alt="Logo NeoFono" class="logo">
+        <nav class="nav-buttons">
+         
+          <button onclick="irPara('inicio.html')">Início</button>
+          <button onclick="irPara('conversas.html')">Conversas</button>
+          <button onclick="irPara('atividades.html')" class="active">Atividades</button>
+          <button onclick="irPara('info.html')">Info</button>
+        </nav>
+        <div class="perfil-btn"><img src="fotos/icon.perfil.png" alt="perfil.png"; style="height: 50px;"></div>
+      </header>
+
+      <!-- Título -->
+      <h1>Atividades</h1>   
+
+      <section class="conteudo">
+        <!-- Lista de atividades -->
+        <div class="atividades">
+          <div class="atividade roxo">
+            <div class="texto">
+              <h3>Exercícios de articulação</h3>
+              <p>Pratique movimentos para melhorar sua articulação.</p>
+            </div>
+            <button class="entrar">Entrar</button>
+          </div>
+
+          <div class="atividade verde">
+            <div class="texto">
+              <h3>Leitura em voz alta</h3>
+              <p>Escolha e leia um texto em voz alta para treinar entonação.</p>
+            </div>
+            <button class="entrar">Entrar</button>
+          </div>
+
+          <div class="atividade verde">
+            <div class="texto">
+              <h3>Prática de entonação</h3>
+              <p>Treine entonação para comunicação mais clara.</p>
+            </div>
+            <button class="entrar">Entrar</button>
+          </div>
+
+          <div class="atividade roxo">
+            <div class="texto">
+              <h3>Trava-línguas</h3>
+              <p>Exercícios divertidos para melhorar a dicção.</p>
+            </div>
+            <button class="entrar">Entrar</button>
+          </div>
+
+          <div class="atividade verde">
+            <div class="texto">
+              <h3>História narrada</h3>
+              <p>Leia uma história simples para treinar ritmo e clareza.</p>
+            </div>
+            <button class="entrar">Entrar</button>
+          </div>
+        </div>
+
+        <!-- Progresso -->
+        <div class="progresso">
+          <h3>Progresso de atividades</h3>
+          <div class="circle">
+            <span id="percent">8%</span>
+          </div>
+          <div class="legenda">
+            <span class="roxo-dot"></span> Não Finalizadas
+            <span class="verde-dot"></span> Finalizadas
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="javascript/script.js"></script>
+</body>
+</html>
