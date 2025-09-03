@@ -6,8 +6,19 @@
 }
 
 body {
+  background-color: #7aa9ff;
   font-family: Arial, sans-serif;
   height: 100vh;
+}
+
+.container{
+  /* border-radius: 20px 20px 20px 20px; */
+  margin: 19px;
+  margin-top: 20px;
+  background-color: white;
+  height: 94%;;
+  width: 98%;
+  border-radius: 20px;
 }
 
 /* Container geral */
@@ -20,6 +31,7 @@ body {
 
 /* Barra superior */
 .top-bar {
+  border-radius: 20px 20px 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -69,6 +81,7 @@ nav .active {
 
 /* Layout principal */
 .chat-container {
+  border-radius: 20px 20px 20px 20px;
   display: flex;
   flex: 1;
   background: #d9ebff;
@@ -76,6 +89,7 @@ nav .active {
 
 /* Lista de contatos */
 .contacts {
+  border-radius: 0 0 0 20px;
   width: 250px;
   background: #b3d1ff;
   padding: 10px;
@@ -103,6 +117,7 @@ nav .active {
 
 /* Janela do chat */
 .chat-window {
+  border-radius: 20px 20px 20px 20px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -117,6 +132,7 @@ nav .active {
 }
 
 .messages {
+  margin-top: 18px;
   flex: 1;
   padding: 20px;
   display: flex;
@@ -147,6 +163,8 @@ nav .active {
 
 /* Caixa de texto */
 .chat-input {
+  margin-top: 400px;
+  border-radius: 0 0 20px 0px;
   display: flex;
   padding: 12px;
   background-color: #b3d1ff;

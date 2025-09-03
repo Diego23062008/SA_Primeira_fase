@@ -73,17 +73,6 @@ form.certificado.addEventListener("change", () => {
   certName.textContent = form.certificado.files[0]?.name || "Nenhum arquivo";
 });
 
-renderMedicos();
-
-
-// botao ir para outra pagina
-
-// Quando clicar em confirmar, vai para outra página
-btnConfirmar.addEventListener("click", () => {
-  window.location.href = "teste.html"; // muda para a página desejada
-});
-
-
 // Gerenciamento de inputs de arquivo
 function setupFileInput(inputId, spanId) {
   const input = document.getElementById(inputId);
@@ -94,6 +83,7 @@ function setupFileInput(inputId, spanId) {
   });
 }
 
+       // Configura os inputs de arquivo
 setupFileInput("doc", "file-doc-name");
 setupFileInput("certificado", "file-cert-name");
 

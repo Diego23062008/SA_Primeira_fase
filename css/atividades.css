@@ -1,16 +1,17 @@
 body {
-  height: 100vh;              /* ocupa a altura total da tela */
-  display: flex;              /* ativa flexbox */
-  justify-content: center;    /* centraliza na horizontal */
-  align-items: center;        /* centraliza na vertical */
-  background: #7aa9ff        /* fundo escuro (igual sua tela) */
+  height: 100vh;              
+  display: flex;              
+  justify-content: center;    
+  align-items: center;        
+  background: #7aa9ff    
+  
 }
 
 
 .container {
   margin: 0 auto;
   background-color: white;
-  height: 106%;;
+  height: 94%;;
   width: 98%;
   border-radius: 20px;
 }

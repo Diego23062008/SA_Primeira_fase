@@ -1,12 +1,10 @@
-/* Reset */
 
-*
 
-/* Reset básico (tira margens e paddings padrões do navegador) */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 /* Estilizando o body para centralizar tudo */

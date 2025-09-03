@@ -3,37 +3,63 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: #000000;
-  color: #333;
+  height: 100vh;              /* ocupa a altura total da tela */
+  display: flex;              /* ativa flexbox */
+  justify-content: center;    /* centraliza na horizontal */
+  align-items: center;        /* centraliza na vertical */
+  background: #7aa9ff        /* fundo escuro (igual sua tela) */
 }
 
-/* Container geral */
+
 .container {
-  margin: 0 auto;
+  margin: -10px;
   background-color: white;
-  height: 90%;;
-  width: 90%;
-  border-radius: 20px;
-}
+  height: 94%;;
+  width: 98%;
+  border-radius: 20px;}
 
 
 /* Barra superior */
-
-
+.top-bar {
+  border-radius: 20px 20px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7AA9FF;
+  padding: 0px 0px;
+  border-bottom: 2px solid #b0cfff;
+}
 
 .logo {
-  
   width: 220px;
-  height: 150px;}
-
-
-.nav-buttons{
-  gap: 50px;   /* aumenta a distância entre os botões */
+  height: 150px;
 }
+
+.nav-buttons {
+  gap: 50px;   /* aumenta a distância entre os botões */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+.nav-buttons button {
+  background: #c9f3ee;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+div .active {
+  background: #7ce2d1;
+}
+
 /* Conteúdo principal */
 .main-content {
   flex: 1;
@@ -49,35 +75,15 @@ body {
   position: relative;
 }
 
-.nav-buttons {
-  
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 20px;
-}
-.nav-buttons button {
-  background: #c9f3ee;
-  border: none;
-  padding: 8px 15px;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-div .active {
-  background: #7ce2d1;
-}
-
-
 /* Conteúdo principal */
 .home-content {
+  border-radius: 20px 20px 0px 0px;
   flex: 1;
-  padding: 0px 25px;
+  padding: 0px 15px;
   background: #ffffff;
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 40px;
 }
 
 .welcome {
@@ -146,8 +152,7 @@ div .active {
   display: flex;
   justify-content: space-around;
   padding: 30px;
-  border-top-left-radius: 14px;
-  border-top-right-radius: 14px;
+  border-radius: 0px 0px 20px 20px;
 }
 
 .footer-col {
