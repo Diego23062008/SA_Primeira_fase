@@ -5,6 +5,11 @@ const certName = document.getElementById("file-cert-name");
 
 let medicos = JSON.parse(localStorage.getItem("medicos")) || [];
 
+// Função para redirecionar entre páginas
+function irPara(pagina) {
+  window.location.href = pagina;
+}
+
 function renderMedicos() {
   lista.innerHTML = "";
   medicos.forEach((m, index) => {
@@ -18,10 +23,7 @@ function renderMedicos() {
       Certificado: ${m.certificado || "Nenhum"}<br>
       <button class="editar" onclick="editar(${index})">Editar</button>
       <button class="remover" onclick="remover(${index})">Remover</button>
-    <form id="form">
-     <button type="submit">Entrar no site</button>
-    </form>
-     <button id="btnConfirmar" style="display:none;">Confirmar</button>
+      <button type="submit" onclick="irPara('inicio.html')"style="color: white;">Ir para o Site</button>
 
     `;
     lista.appendChild(li);

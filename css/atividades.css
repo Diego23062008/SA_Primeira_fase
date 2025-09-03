@@ -1,35 +1,33 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
+  height: 100vh;              /* ocupa a altura total da tela */
+  display: flex;              /* ativa flexbox */
+  justify-content: center;    /* centraliza na horizontal */
+  align-items: center;        /* centraliza na vertical */
+  background: #7aa9ff        /* fundo escuro (igual sua tela) */
 }
 
 
 .container {
-  display: flex;
-  height: 120vh;
-}
-
-/* Sidebar */
-.sidebar {
-  background: #7caeff;
-  width: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 20px 10px;
-  color: white;
-  font-weight: bold;
-
-
+  margin: 0 auto;
+  background-color: white;
+  height: 106%;;
+  width: 98%;
+  border-radius: 20px;
 }
 .logo {
   
   width: 220px;
   height: 150px;}
 
+
+.navbar{
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px;
+  position: relative;
+}
 .nav-buttons{
-  display: flex;
   gap: 50px;   /* aumenta a distância entre os botões */
 }
 /* Conteúdo principal */
@@ -43,14 +41,22 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  padding: 10px 20px;
+  position: relative;
 }
 
-nav button {
+.nav-buttons {
+  margin: -10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+.nav-buttons button {
   background: #c9f3ee;
   border: none;
   padding: 8px 15px;
-  margin: 0 5px;
   border-radius: 20px;
   cursor: pointer;
 }
@@ -59,10 +65,7 @@ nav .active {
   background: #7ce2d1;
 }
 
-.perfil-btn {
-  font-size: 25px;
-  cursor: pointer;
-}
+
 
 /* Conteúdo */
 .conteudo {

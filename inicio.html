@@ -7,22 +7,31 @@
   <link rel="stylesheet" href="css/inicio.css">
 </head>
 <body>
-  <div class="app-container">
+  <div class="-container">
     <!-- Barra superior -->
-    <header class="top-bar">
-      <div class="logo">NeoFono</div>
-      <nav class="menu">
-        <button onclick="navigate('inicio.html')" class="active">Início</button>
-        <button onclick="navigate('info.html')">Info</button>
-        <button onclick="navigate('atividades.html')">Atividades</button>
-        <button onclick="navigate('conversas.html')">Conversas</button>
-        <button onclick="navigate('perfil.html')">Perfil</button>
-      </nav>
-      <div class="user-icon"></div>
-    </header>
+
 
     <!-- Conteúdo principal -->
     <main class="home-content">
+
+
+    <div class="top-nav">
+      <div class="logo-nav">
+         <img src="fotos/logo-removebg-preview.png" alt="Logo NeoFono" class="logo">
+      </div>
+ 
+         <div class="nav-buttons">
+        
+          <button onclick="irPara('inicio.html')" style="color: white;"class="active">Início</button>
+          <button onclick="irPara('conversas.html')" style="color: white;">Conversas</button>
+          <button onclick="irPara('atividades.html')"style="color: white;" >Atividades</button>
+          <button onclick="irPara('info.html')"style="color: white;">Info</button>
+          <button onclick="irPara('perfil.html')"style="color: white;">Perfil</button>
+         </div>
+        
+
+        </div>
+
       <!-- Boas-vindas -->
       <section class="welcome">
         <div class="text">
