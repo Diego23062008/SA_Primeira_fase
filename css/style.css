@@ -40,13 +40,45 @@ body {
 }
 
 /* Header */
-header {
-  border-bottom: 2px solid #7AA9FF;
+
+.logo {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0px 60px;
-  background: white;
+  gap: 10px;
+}
+.logo-text {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #000;
+}
+nav {
+  display: flex;
+  gap: 10px;
+}
+
+.opcaoCima {
+  padding: 8px 16px;
+  background: #b2f0e1;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #7aa9ff;
+}
+.opcaoCima:hover {
+  background: #7aa9ff;
+  color: white;
+}
+.opcaoCima.selecionado {
+  background: #7aa9ff !important;
+  color: white !important;
+}
+.user-icon {
+  width: 40px;
+  height: 40px;
+  background: #a6f0d1;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .logo {
@@ -92,6 +124,7 @@ main {
 }
 
 .cards {
+  margin-top: -4%;
   display: flex;
   gap: 120px;
 }
@@ -122,14 +155,7 @@ main {
   font-size: 1.2rem;
   color: #2c3e50;
 }
-.menuCima {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-  padding: 10px;
-  border-radius: 10px;
-}
+
 
 .opcaoCima {
   padding: 8px 16px;

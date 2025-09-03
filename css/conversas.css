@@ -28,7 +28,21 @@ body {
   border-bottom: 2px solid #b0cfff;
  
 }
-
+.nav-buttons {
+  margin: -10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+.nav-buttons button {
+  background: #c9f3ee;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
 
 
 .logo img {
@@ -49,8 +63,8 @@ width: 150px
   background: #cce0ff;
 }
 
-.user-icon {
-height: 40px;
+nav .active {
+  background: #7ce2d1;
 }
 
 /* Layout principal */

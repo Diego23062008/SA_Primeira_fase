@@ -45,13 +45,13 @@ function mostrarMensagem(mensagem, tipo = 'info') {
 }
 
 function escolherOpcao(opcao) {
-    const mensagens = {
-        "paciente": "Você escolheu criar conta como Paciente!",
-        "medico": "Você escolheu criar conta como Médico!",
-        "login": "Você escolheu entrar em uma conta existente!"
-    };
-    
-    mostrarMensagem(mensagens[opcao], 'success');
+    if (opcao === "paciente") {
+        window.location.href = "CadastroPaciente.html";
+    } else if (opcao === "medico") {
+        window.location.href =("CadastroMedico.html");
+    } else if (opcao === "login") {
+        window.location.href =("login.html");
+    }
 }
 
 function escolherOpcaoCima(opcao) {

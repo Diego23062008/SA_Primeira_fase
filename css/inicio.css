@@ -7,69 +7,73 @@
 
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #1a1a1a;
+  background: #000000;
   color: #333;
 }
 
 /* Container geral */
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+.container {
+  margin: 0 auto;
+  background-color: white;
+  height: 90%;;
+  width: 90%;
+  border-radius: 20px;
 }
 
+
 /* Barra superior */
-.top-bar {
+
+
+
+.logo {
+  
+  width: 220px;
+  height: 150px;}
+
+
+.nav-buttons{
+  gap: 50px;   /* aumenta a distância entre os botões */
+}
+/* Conteúdo principal */
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Navegação */
+.top-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #e6f2ff;
-  padding: 12px 30px;
-  border-bottom: 2px solid #b0cfff;
+  padding: 10px 20px;
+  position: relative;
 }
 
-.logo {
-  font-weight: bold;
-  font-size: 1.3em;
-  color: #0056b3;
-}
-
-.menu {
+.nav-buttons {
+  
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  gap: 25px;
+  gap: 20px;
 }
-
-.menu button {
-  background: transparent;
+.nav-buttons button {
+  background: #c9f3ee;
   border: none;
-  font-size: 1em;
-  color: #0056b3;
+  padding: 8px 15px;
+  border-radius: 20px;
   cursor: pointer;
-  padding: 6px 12px;
-  border-radius: 6px;
-  transition: background 0.3s, font-weight 0.2s;
 }
 
-.menu button:hover {
-  background: #cce0ff;
+div .active {
+  background: #7ce2d1;
 }
 
-.menu button.active {
-  font-weight: bold;
-  border-bottom: 2px solid #0056b3;
-}
-
-.user-icon {
-  width: 36px;
-  height: 36px;
-  background: #9ecaff;
-  border-radius: 50%;
-}
 
 /* Conteúdo principal */
 .home-content {
   flex: 1;
-  padding: 50px 80px;
+  padding: 0px 25px;
   background: #ffffff;
   display: flex;
   flex-direction: column;
